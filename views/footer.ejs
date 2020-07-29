@@ -1,0 +1,64 @@
+<section id="footer_text" class="border_bottom_3 border_top_3">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="footer_3 clearfix">
+					<div class="col-sm-3">
+						<div class="footer_3_inner">
+							<h4>Garud Travels</h4>
+							<a href="/"><img src="img/download.png" alt="logo" style="width : 240px;"></a>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="footer_3_inner_1 ">
+							<p>Country</p>
+							<select name="month" class="form-control input-lg">
+								<option value="01">India</option>
+								<option value="02">America</option>
+								<option value="03">Australia</option>
+								<option value="03">Thiland</option>
+								<option value="04">Nepal</option>
+								<option value="05">Holland</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<p>Email : garudtravels2012@gmail.com <br> info@garudtravels.in</p>
+						<p>Mobile :<br> +91-810 410 9602<br>+91-996 727 9859<br>+91-804 633 3629</p>
+					</div>
+					<div class="col-sm-3">
+						<div class="footer_3_inner_2">
+							<p>Follow Us :</p>
+							<p><a href="https://www.facebook.com/pages/category/Travel-Company/Garud-Travels-111459240223947/"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"> <i class="fa fa-youtube"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+							</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$(document).on('click', '.number-spinner button', function () {
+		var btn = $(this),
+			oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+			newVal = 0;
+
+		if (btn.attr('data-dir') == 'up') {
+			newVal = parseInt(oldValue) + 1;
+		} else {
+			if (oldValue > 1) {
+				newVal = parseInt(oldValue) - 1;
+			} else {
+				newVal = 1;
+			}
+		}
+		btn.closest('.number-spinner').find('input').val(newVal);
+	});
+</script>

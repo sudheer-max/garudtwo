@@ -1,0 +1,156 @@
+
+<%- include("header") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package details</title>
+    <script src="./node_modules/ckeditor/ckeditor.js"></script>
+</head>
+<body>
+    <div class="container">
+      <h1 class="text-center">UPDATE A RECORD</h1>
+      <form action="/edit/<%= model.id %>" method="POST" >
+        <div class="form-horizontal">
+          <div class="form-group row">
+            <label for="title" class="col-form-label col-sm-2">title</label>
+            <div class="col-sm-10">
+              <input type="text" name="title" autofocus class="form-control" value="<%= model.title %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Title" class="col-form-label col-sm-2">package</label>
+            <div class="col-sm-10">
+              <input type="text" name="package" autofocus class="form-control" value="<%= model.package %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Title" class="col-form-label col-sm-2">place</label>
+            <div class="col-sm-10">
+              <input type="text" name="place" autofocus class="form-control" value="<%= model.place %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Title" class="col-form-label col-sm-2">image_one</label>
+            <div class="col-sm-10">
+              <input type="text" name="image_one" autofocus class="form-control" value="<%= model.image_one %>">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="image_one" class="col-form-label col-sm-2">image_two</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="image_two" value="<%= model.image_two %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="image_one" class="col-form-label col-sm-2">image_three</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="image_three" value="<%= model.image_three %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="image_one" class="col-form-label col-sm-2">trip_period</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="trip_period" value="<%= model.trip_period %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="image_one" class="col-form-label col-sm-2">trip_validity</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="trip_validity" value="<%= model.trip_validity %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="trip_pass" class="col-form-label col-sm-2">trip_pass</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="trip_pass" value="<%= model.trip_pass %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Comment" class="col-form-label col-sm-2">Inclusion</label>
+            <div class="col-sm-10">
+              <textarea name="inclusion" class="form-control" autofocus placeholder="inclusion"><%= model.inclusion %></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Comment" class="col-form-label col-sm-2">exclusion</label>
+            <div class="col-sm-10">
+              <textarea name="exclusion" class="form-control" autofocus placeholder="exclusion"><%= model.exclusion %></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="details" class="col-form-label col-sm-2">details</label>
+            <div class="col-sm-10">
+              <textarea name="details" class="form-control" autofocus placeholder="details"><%= model.details %></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="gallery_one" class="col-form-label col-sm-2">gallery_one</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="gallery_one" value="<%= model.gallery_one %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="gallery_two" class="col-form-label col-sm-2">gallery_two</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="gallery_two" value="<%= model.gallery_two %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="gallery_three" class="col-form-label col-sm-2">gallery_three</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="gallery_three" value="<%= model.gallery_three %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="gallery_four" class="col-form-label col-sm-2">gallery_four</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="gallery_four" value="<%= model.gallery_four %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="gallery_five" class="col-form-label col-sm-2">gallery_five</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="gallery_five" value="<%= model.gallery_five %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="gallery_six" class="col-form-label col-sm-2">gallery_six</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="gallery_six" value="<%= model.gallery_six %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="note" class="col-form-label col-sm-2">note</label>
+            <div class="col-sm-10">
+              <input type="text" autofocus class="form-control" name="note" value="<%= model.note %>">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="hotel_package" class="col-form-label col-sm-2">hotel_package</label>
+            <div class="col-sm-10">
+              <textarea name="hotel_package" class="form-control" autofocus placeholder="hotel_package"><%= model.hotel_package %></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-form-label col-sm-2"></label>
+            <div class="col-sm-10">
+              <input type="submit" value="Update" class="btn btn-default btn-warning">
+              <a class="btn btn-outline-dark cancel" href="/domestic">Cancel</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+</body>
+
+<%- include("footer") %>
+<script>
+  CKEDITOR.replace('exclusion');
+  CKEDITOR.replace('inclusion');
+  CKEDITOR.replace('details');
+  CKEDITOR.replace('hotel_package');
+</script>
+</html>

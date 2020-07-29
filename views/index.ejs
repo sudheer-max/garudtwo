@@ -1,0 +1,365 @@
+<%- include("header") %>
+
+<div class="main_center">
+	<div class="main_slider">
+		<section id="center">
+
+			<div class="center_1">
+				<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+					<!-- Overlay -->
+					<div class="overlay"></div>
+
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#bs-carousel" data-slide-to="1" class=""></li>
+						<li data-target="#bs-carousel" data-slide-to="2" class=""></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+
+					<div class="carousel-inner">
+						<div class="item slides active">
+							<div class="slide-1"></div>
+							<div class="hero">
+								<div class="col-sm-6"> </div>
+								<div class="col-sm-6">
+									<hgroup>
+										<h1>WE TRAVEL</h1>
+										<h3>not to escape life.</h3>
+										<h1>BUT FOR LIFE</h1>
+										<h3>not to escape us.</h3>
+									</hgroup>
+									<button class="btn btn-hero btn-lg" role="button">Trip Now</button>
+								</div>
+							</div>
+						</div>
+						<div class="item slides">
+							<div class="slide-2"></div>
+							<div class="hero">
+								<div class="col-sm-6"> </div>
+								<div class="col-sm-6">
+									<hgroup>
+										<h1>TRAVEL IS NEVER A MATTER OF MONEY</h1>
+										<h3>but of courage.</h3>
+									</hgroup>
+									<button class="btn btn-hero btn-lg" role="button">Trip Now</button>
+								</div>
+							</div>
+						</div>
+						<div class="item slides">
+							<div class="slide-3"></div>
+							<div class="hero">
+								<div class="col-sm-6"></div>
+								<div class="col-sm-6">
+									<hgroup>
+										<h1>COVER THE EARCH</h1>
+										<h3>BEFORE IT COVERS YOU.</h3>
+									</hgroup>
+									<button class="btn btn-hero btn-lg" role="button">Trip Now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+</div>
+
+<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 content_1">
+				<p><i class="fa fa-check-circle"></i>Allow you to meet new people.</p>
+			</div>
+			<div class="col-sm-4 content_1">
+				<p><i class="fa fa-check-circle"></i>Gives you the chance to try new things.</p>
+			</div>
+			<div class="col-sm-4 content_1">
+				<p><i class="fa fa-check-circle"></i>Let's you experience other cultures.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="routes">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<% for (const home of model) {%>
+				<div class="col-sm-3">
+					<div class="routes_inner">
+					 <a href="/domestic/<%= home.id %>"><img src="<%= home.image_one %>" width="100%"></a>
+					  <div class="routes_inner_1 clearfix">
+						 <h4><%=home.title %></h4>
+						 <h6><%= home.place %></h6>
+						 <h5><%= home.trip_validty %></h5>
+						 <h6><%= home.trip_period %></h6>
+						 <span> <a href="domestic/<%= home.id %>">View Ways</a></span>
+						 <!-- <span class="booking_1"> <a href="#">Book Now</a></span> -->
+					   </div>
+					</div>
+				</div>
+				<%} %>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- <section id="destination">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2> <i class="fa fa-map-marker"></i> Our Hotel Packages</h2>
+			</div>
+			<div class="col-sm-12 destination">
+				<% for (const hotel of model) { %> 
+					
+				<div class="col-sm-2 destination_1">
+					<a href="#"><img src="<%= hotel.image_one %>" width="100%"></a>
+					<h3>Singapore</h3>
+				</div>_
+				<%} %>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<section id="booking">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 booking">
+				<h2> <i class="fa fa-paper-plane"></i> Why Book Our<span> Packages</span> ?</h2>
+				<div class="clearfix">
+					<div class="col-sm-4 booking_inner">
+						<p class="text-center"><i class="fa fa-ticket"></i></p>
+						<h4>BUY A TICKET TAKE THE RIDE</h4>
+					</div>
+					<div class="col-sm-4 booking_inner">
+						<p class="text-center"><i class="fa fa-hotel"></i></p>
+						<h4>HOSPITALITY IS SIMPLY SHOW AN OPPORTUNITY TO SHOW LOVE AND CARE</h4>
+					</div>
+					<div class="col-sm-4 booking_inner">
+						<p class="text-center"><i class="fa fa-umbrella"></i></p>
+						<h4>MY DEFINATION OF A GOOD HOTEL IS A PLACE I'D SAY AT</h4>
+					</div>
+				</div>
+				<div class="clearfix booking_bottom">
+					<div class="col-sm-4 booking_inner">
+						<p class="text-center"><i class="fa fa-plane"></i></p>
+						<h4>LET YOUR DREAMS TAKE FLIGHT</h4>
+					</div>
+					<div class="col-sm-4 booking_inner">
+						<p class="text-center"><i class="fa fa-smile-o"></i></p>
+						<h4>USE YOUR SMILE TO CHANGE THE WORLD, DON'T THE WORLD CHANGE YOUR SMILE.</h4>
+					</div>
+					<div class="col-sm-4 booking_inner">
+						<p class="text-center"><i class="fa fa-plane"></i></p>
+						<h4>MY SOUL IS IN THE SKY</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- <section id="blog">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 blog">
+				<h2><i class="fa fa-quote-left"></i></h2>
+				<h4> Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</h4>
+				<p>Praesent Mauris TR</p>
+			</div>
+			<div class="col-sm-6 blog">
+				<h2><i class="fa fa-quote-left"></i></h2>
+				<h4> Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</h4>
+				<p>Praesent Mauris TR</p>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<section class="table-outer mt-5">
+	<div class="container">
+		<h1 class="text-center">BUS RENTAL</h1>
+		<hr>
+		<div class="table-responsive-sm">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>CLASS</th>
+						<th>BUS NAME</th>
+						<th>A/C</th>
+						<th>NON A/C</th>
+						<th>TAX</th>
+						<th>DRIVER ALLOWANCE</th>
+						<th>NIGHT ALLOWANCE (After Midnight : 12.00 Hrs)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img src="http://www.vigneshwartours.com/wp-content/uploads/2016/07/b3.jpg" alt=""></td>
+						<td>17 Seater  AC Executive</td>
+						<td>24/-</td>
+						<td>NA</td>
+						<td>800/-</td>
+						<td>400/-</td>
+						<td>400/-</td>
+					</tr>
+					<tr>
+						<td><img src="http://www.vigneshwartours.com/wp-content/uploads/2016/08/17-Seater-AC-PKN-.jpg" style="width: 120px;" alt=""></td>
+						<td>17 Seater T.T</td>
+						<td>22/-</td>
+						<td>17/-</td>
+						<td>600/-</td>
+						<td>400/-</td>
+						<td>400/-</td>
+					</tr>
+					<tr>
+						<td><img src="http://www.vigneshwartours.com/wp-content/uploads/2016/08/b5.jpg" alt="" style="width: 120px;"></td>
+						<td>20 Seater T.T</td>
+						<td>24/-</td>
+						<td>18/-</td>
+						<td>800/-</td>
+						<td>400/-</td>
+						<td>400/-</td>
+					</tr>
+					<tr>
+						<td><img src="https://5.imimg.com/data5/TU/WJ/MY-7195121/26-s-tempot-ac3-500x500.jpg" style="width: 120px;" alt=""></td>
+						<td>27 / 29 Seater</td>
+						<td>35/-</td>
+						<td>25/-</td>
+						<td>1000/-</td>
+						<td>500/-</td>
+						<td>500/-</td>
+					</tr>
+					<tr>
+						<td><img src="https://www.travellerforhire.com/wp-content/uploads/2017/02/26-seater-tempo-travellerforhire-600x380.jpg" style="width: 120px;" alt=""></td>
+						<td>45 /48 Seater</td>
+						<td>45/-</td>
+						<td>33/-</td>
+						<td>1500/-</td>
+						<td>500/-</td>
+						<td>500/-</td>
+					</tr>
+					<tr>
+						<td><img src="https://5.imimg.com/data5/HU/CM/MY-7195121/45-seater-500x500.jpg" style="width: 120px;" alt=""></td>
+						<td>45 Volvo</td>
+						<td>80/-</td>
+						<td>NA</td>
+						<td>2000/-</td>
+						<td>600/-</td>
+						<td>500/-</td>
+					</tr>
+					<tr>
+						<td><img src="https://lh3.googleusercontent.com/proxy/QxMjuzf3EFVbwmd3oVOsQZo0Xy_Bx5HXPZa1hD1WUs7lzfSCpPw82DsCKsEZibENPm2CNHlgDgWLGMrvh1GTBoDlKEh309aZKe1kNixMrVo_uj4BcsAb1qodCtOKfmr_VqoPZLRaueCGoozKZZgzdos" style="width: 120px;" alt=""></td>
+						<td>49 Seater Multiaxle  Volvo</td>
+						<td>100/-</td>
+						<td>NA</td>
+						<td>2500/-</td>
+						<td>500/-</td>
+						<td>500/-</td>
+					</tr>
+					<tr>
+						<td><img src="https://lh3.googleusercontent.com/proxy/Tf-rF_YJqTcWvgk08dR9qhDHGn3BBdRr24lu5ZsvrlCqyRgOotgwZgOwXBzgtnb7hekfVA25rED-pHE-zHAkj36EGTCwN-Rf9We9AaiS4NEpMeGokqM" style="width: 120px;" alt=""></td>
+						<td>30 Seater A/C Sleeper</td>
+						<td>55/-</td>
+						<td>NA</td>
+						<td>1500/-</td>
+						<td>500/-</td>
+						<td>500/-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</section>
+
+
+<section class="table-outer mt-5">
+	<div class="container">
+		<h1 class="text-center">CAR RENTAL</h1>
+		<hr>
+		<div class="table-responsive-sm">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>CLASS</th>
+						<th>CAR NAME</th>
+						<th>A/C</th>
+						<th>PER EXTRA KM</th>
+						<th>PER EXTRA HR</th>
+						<th>NIGHT ALLOWANCE (After Midnight : 12.00 Hrs)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img src="http://www.vigneshwartours.com/wp-content/uploads/2016/07/c2.jpg" style="width: 120px;" alt=""></td>
+						<td>Swift D’zire/ Etios /Ford</td>
+						<td>1,700/-</td>
+						<td>11/-</td>
+						<td>125/-</td>
+						<td>200/-</td>
+					</tr>
+					<tr>
+						<td><img src="http://www.vigneshwartours.com/wp-content/uploads/2016/07/c7.jpg" style="width: 120px;" alt=""></td>
+						<td>Innova</td>
+						<td>2,500/-</td>
+						<td>13/-</td>
+						<td>150/-</td>
+						<td>200/-</td>
+					</tr>
+					<tr>
+						<td><img src="http://www.vigneshwartours.com/wp-content/uploads/2016/08/car-125x94.jpg" style="width: 120px;" alt=""></td>
+						<td>Innova Crysta</td>
+						<td>3,000/-</td>
+						<td>16/-</td>
+						<td>250/-</td>
+						<td>300/-</td>
+					</tr>
+					<tr>
+						<td><img src="http://www.vigneshwartours.com/wp-content/uploads/2016/07/c8.jpg" style="width: 120px;" alt=""></td>
+						<td>Sunny Nissan</td>
+						<td>2,500/-</td>
+						<td>15/-</td>
+						<td>200/-</td>
+						<td>300/-</td>
+					</tr>
+					<tr>
+						<td><img src="http://www.vigneshwartours.com/wp-content/uploads/2016/07/c12.jpg" style="width: 120px;" alt=""></td>
+						<td>BMW 5 Serise</td>
+						<td>9,000/-</td>
+						<td>90/-</td>
+						<td>900/-</td>
+						<td>500/-</td>
+					</tr>
+					<tr>
+						<td><img src="http://www.vigneshwartours.com/wp-content/uploads/2016/07/c14.jpg" style="width: 120px;" alt=""></td>
+						<td>Mercedes E class</td>
+						<td>9,000/-</td>
+						<td>90/-</td>
+						<td>900/-</td>
+						<td>500/-</td>
+					</tr>
+					<tr>
+						<td><img src="http://www.vigneshwartours.com/wp-content/uploads/2016/07/c15.jpg" style="width: 120px;" alt=""></td>
+						<td>Mercedes S class</td>
+						<td>16,000/-</td>
+						<td>160/-</td>
+						<td>1600/-</td>
+						<td>500/-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</section>
+
+<%- include("footer") %>

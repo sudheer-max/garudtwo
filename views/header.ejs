@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Garud Travels</title>
+	<base href="/">
+	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script  src="ckeditor/ckeditor.js">
+		CKEDITOR.replace('description');
+	</script>
+
+  </head>
+  <body>
+	
+	<section id="top">
+		<div class="container">
+		  <div class="row">
+		   <div class="col-sm-12">
+			 <div class="top">
+			   <ul class="nav navbar-nav navbar-right">
+				<li class="border_1"><a class="text_1" href="#"><i class="fa fa-envelope"></i>Email : garudtravels2012@gmail.com</a></li>
+				<li class="border_1"><a class="text_1" href="#"><i class="fa fa-mobile"></i>022-2810 9191/022-2810 9494</a></li>
+				<!-- <li class="border_1"><a class="text_1" href="#"><i class="fa fa-shopping-cart"></i>Project</a></li>
+				<li class="border_1"><a class="text_1" href="#">Help</a></li> -->
+				<li class="dropdown border_1">
+							<a href="#" class="dropdown-toggle popup_box focus text_1" data-toggle="dropdown">Trip Status <b class="caret"></b></a>
+							<ul class="dropdown-menu" style="padding: 15px;min-width: 380px;">
+							   <li>
+								  <div class="row">
+									 <div class="col-md-12 drop_1">
+										 <p>Enter your Trip Booking Phone number</p>
+										<form class="form" role="form" method="post" action="#" accept-charset="UTF-8" id="login-nav">
+										   <div class="form-group">
+											  <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											  <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required="">
+										   </div>
+										   <div class="form-group">
+											  <label class="sr-only" for="exampleInputPassword2">Password</label>
+											  <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Phone" required="">
+										   </div>
+										   <div class="checkbox">
+											  <label>
+											  <input type="checkbox"> Remember me
+											  </label>
+										   </div>
+										   <div class="form-group text-right">
+											  <button type="submit" class="btn btn ">Your Status</button>
+										   </div>
+										</form>
+									 </div>
+								  </div>
+							   </li>
+							  
+							   
+							</ul>
+						 </li>
+				<li class="dropdown">
+				 <a class="text_1 dropdown-toggle" href="#" data-toggle="dropdown">Sign In <span class="caret"></span></a>
+				   <ul id="login-dp" class="dropdown-menu">
+					   <li>
+							<div class="row">
+								   <div class="col-md-12">
+									   Login via
+									   <div class="social-buttons">
+										   <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+										   <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+									   </div>
+									   or
+										<form class="form" role="form" method="post" action="#" accept-charset="UTF-8" id="login-nav">
+											   <div class="form-group">
+													<label class="sr-only" for="exampleInputEmail2">Email address</label>
+													<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required="">
+											   </div>
+											   <div class="form-group">
+													<label class="sr-only" for="exampleInputPassword2">Password</label>
+													<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required="">
+													<div class="help-block text-right"><a href="#">Forget the password ?</a></div>
+											   </div>
+											   <div class="form-group">
+													<button type="submit" class="btn btn-primary btn-block">Sign in</button>
+											   </div>
+											   <div class="checkbox">
+													<label>
+													<input type="checkbox"> keep me logged-in
+													</label>
+											   </div>
+										</form>
+								   </div>
+								   <div class="bottom text-center">
+									   New here ? <a href="#"><b>Join Us</b></a>
+								   </div>
+							</div>
+					   </li>
+				   </ul>
+			   </li>
+			   </ul>
+			 
+			 </div>
+			   
+			 </div>
+		  </div>
+		</div>
+	   </section>
+
+<section id="header">
+	    <div class="container">
+		 <div class="row">
+		   <div class="col-sm-12">
+		     <nav class="navbar navbar-default" role="navigation">
+   
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="img/download.png" alt="logo" style="width : 240px;"></a>
+			  </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+		      <ul class="nav navbar-nav">
+		        <li><a href="/">Home</a></li>
+				<li><a href="/domestic">Domestic Package</a></li>
+				<li><a href="/international">International Package</a></li>
+				<li><a href="/hotel">Hotel Package</a></li>
+				<li><a href="/contact">Contact</a></li>
+			  </ul>
+			  <script>
+				  for (var i = 0; i < document.links.length; i++){
+					  if(document.links[i].href == document.URL){
+						  document.links[i].className = 'active_1';
+					  } else {
+						  document.links[0].className = 'active_1';
+					  }
+				  }
+			  </script>
+		      <ul class="nav navbar-nav navbar-right">
+		        <!-- <li class="right_tag"><a href="#"><i class="fa fa-envelope"></i>info@gmail.com</a></li> -->
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+
+		</nav>
+		   </div>
+		 </div>
+		</div>
+	  </section>
